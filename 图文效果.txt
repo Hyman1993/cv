@@ -1,0 +1,12 @@
+.bottom-to-top：从下到上滑动。
+.top-to-bottom：从上到下滑动。
+.left-to-right：从左向右滑动。
+.right-to-left：从右向左滑动。
+.rotate-in：旋转进入。
+.rotate-out：旋转离开。
+.open-up：向上翻转。
+.open-down：向下翻转。
+.open-left：向左翻转。
+.open-right：向右翻转。
+.come-left：带倾斜效果的向左翻转。
+.come-right：带倾斜效果的向右翻转。
