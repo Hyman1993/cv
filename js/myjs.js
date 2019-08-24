@@ -34,6 +34,12 @@ $(function(){  //文档加载完毕时调用
 	     }
 		 lastScrollTop = scroH;
     });
+   
+   　// 点击地址，生成Google Map或者隐藏Google Map
+    $("#addressClick").click(function(){
+		$("#addressMap").toggle();
+		initMap();
+	});
 
       // 图片延迟加载 class="lazyload" data-src="img/mountains/mountain_1.jpg" src="img/loading.gif"
       lazyload();
@@ -52,5 +58,34 @@ function goTo(idName,obj){
 	   if($("#navBarButton").is(':visible')){
 	      $("#navBarButton").click();
 	   }
+
+}
+
+// 生成Google Map
+function initMap(){
+
+   var myCenter = new google.maps.LatLng(35.6947058,139.982618);
+
+	var mapProp = {
+	  center:myCenter,
+	  zoom:10,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+
+	var map=new google.maps.Map(document.getElementById("addressMap"),mapProp);
+
+	// 制作一个定位图标
+	var marker=new google.maps.Marker({
+	  position:myCenter,
+	  });
+
+	marker.setMap(map);
+
+	var infowindow = new google.maps.InfoWindow({content: "千葉県船橋市" }); //创建一个InfoWindow
+
+	//使用谷歌地图定义的事件，给这个marker添加点击事件
+	google.maps.event.addListener(marker, "click", function(){
+		infowindow.open(map,marker);//把这个infoWindow绑定在选定的marker上面
+	});
 
 }
