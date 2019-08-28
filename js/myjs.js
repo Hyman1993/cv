@@ -76,6 +76,7 @@ function initMap(){
 
 	// 制作一个定位图标
 	var marker=new google.maps.Marker({
+	  animation: google.maps.Animation.DROP,
 	  position:myCenter,
 	  });
 
