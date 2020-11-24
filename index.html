@@ -92,8 +92,8 @@
       <!-- The middle big title -->
       <div class="big-title">
         <div class="text-center masked">
-          <h1>彭  煌</h1>
-          <p><span class="sub-title flash_light"></span></p>
+        <!--   <h1>彭  煌</h1> -->
+          <p><span class="sub-title flash_light" style="white-space:nowrap;"></span></p>
         </div>
       </div>
       <!-- End of big title -->
@@ -108,12 +108,12 @@
     <div id="profile" class="content" style="margin-top:25px;">
       <div class="containers">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="margin-top:20px;">
 
             <!-- Title -->
             <div class="title masked">
-              <h1>彭  煌</h1>
-              <span class="h4 element flash_light"></span>
+             <!--  <h1>彭  煌</h1> -->
+              <span class="h4 element flash_light" style="white-space:nowrap;"></span>
             </div>
             <!-- End of title -->
 
@@ -151,18 +151,18 @@
 					<h5><i class="fa fa-book"></i>&nbsp;<span class="text-justify">Major</span> : Software Engineering (2012.09-2016.06)</h5>
 					<h5><i class="fa fa-fire"></i>&nbsp;<span class="text-justify">Language Skill</span> : Chinese(Native) &nbsp; Japanese(Fluent) &nbsp; English(Writing&Reading)</h5>
 					<h5><i class="fa fa-envelope"></i>&nbsp;<span class="text-justify">Email</span> : <a href="mailto:1392841128@qq.com">1392841128@qq.com</a></h5>
-					<h5 id="addressClick" style="cursor:pointer;"><i class="fa fa-map-marker fa-lg mapIcon" style="color:#cf4a5c;"></i>&nbsp;<span class="text-justify">Address</span> : <span style="color:#cf4a5c;">funabashi,chiba</span></h5>
-					<h5><i class="fa fa-file-text"></i>&nbsp;<span class="text-justify">My Blog</span> :<a href="http://160.16.146.245" target="_blank">blog site</a></h5>
+					<h5 id="addressClick" style="cursor:pointer;"><i class="fa fa-map-marker fa-lg mapIcon"></i>&nbsp;<span class="text-justify">Address</span> : <span style="color:#cf4a5c;">Itabashi,Tokyo</span></h5>
+					<h5><i class="fa fa-file-text"></i>&nbsp;<span class="text-justify">My Blog</span> :<a href="http://tokyocoder.com" target="_blank">IT Story In Tokyo</a></h5>
               </div>
 			<div>
                 <h5><span class="text-justify">Follow Me : </span></h5>
 				<ul class="social">
-			      <li class="hvr-grow" title="微信"><a href="#"><i class="fa fa-wechat"></i></a></li>
-			      <li class="hvr-grow" title="QQ"><a href="#"><i class="fa fa-qq"></i></a></li>
+			      <li class="hvr-grow" title="微信"><a><i class="fa fa-wechat"></i></a></li>
+			      <li class="hvr-grow" title="QQ"><a><i class="fa fa-qq"></i></a></li>
 			      <li class="hvr-grow" title="GitHub"><a href="https://github.com/Hyman1993/"><i class="fa fa-github"></i></a></li>
-                  <li class="hvr-grow" title="Facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="hvr-grow" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="hvr-grow" title="LinkedIn"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="hvr-grow" title="Facebook"><a><i class="fa fa-facebook"></i></a></li>
+                  <li class="hvr-grow" title="Twitter"><a><i class="fa fa-twitter"></i></a></li>
+                  <li class="hvr-grow" title="LinkedIn"><a><i class="fa fa-linkedin"></i></a></li>
                </ul>
           </div>
 
@@ -752,12 +752,12 @@
 
 		   <div class="col-md-12 text-center"> 
             <ul class="social">
-			  <li class="hvr-grow" title="微信"><a href="#"><i class="fa fa-wechat"></i></a></li>
-			  <li class="hvr-grow" title="QQ"><a href="#"><i class="fa fa-qq"></i></a></li>
+			  <li class="hvr-grow" title="微信"><a><i class="fa fa-wechat"></i></a></li>
+			  <li class="hvr-grow" title="QQ"><a><i class="fa fa-qq"></i></a></li>
 			  <li class="hvr-grow" title="Github"><a href="https://github.com/Hyman1993/"><i class="fa fa-github"></i></a></li>
-              <li class="hvr-grow" title="Facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="hvr-grow" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="hvr-grow" title="LinkedIn"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li class="hvr-grow" title="Facebook"><a><i class="fa fa-facebook"></i></a></li>
+              <li class="hvr-grow" title="Twitter"><a><i class="fa fa-twitter"></i></a></li>
+              <li class="hvr-grow" title="LinkedIn"><a><i class="fa fa-linkedin"></i></a></li>
             </ul>
 			<p>Copyright &copy; 2019</p>
           </div>
@@ -883,9 +883,30 @@
   </div>
   <!-- fullscreen -->
 
-  <!-- google map start-->
+ <!-- google map start-->
  <!-- Fullscreen Modal -->
-  <div id="addressMap" style="width:500px;height:380px;display:none;position:absolute;left:50%;top:50%;"></div>
+<h5 id="addressModalButton" data-toggle="modal" data-target="#myModal"></h5>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" 
+						aria-hidden="true">×
+				</button>
+			</div>
+			 <!-- google map start-->
+			<div id="addressMap"  style="width:460px;height:360px;"></div>
+			 <!-- google map end-->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" 
+						data-dismiss="modal">CLOSE
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
   <!-- fullscreen -->
   <!-- google map end -->
 

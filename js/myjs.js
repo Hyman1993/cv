@@ -37,7 +37,7 @@ $(function(){  //文档加载完毕时调用
    
    　// 点击地址，生成Google Map或者隐藏Google Map
     $("#addressClick").click(function(){
-		$("#addressMap").toggle();
+		$("#addressModalButton").click();
 		initMap();
 	});
 
@@ -64,7 +64,7 @@ function goTo(idName,obj){
 // 生成Google Map
 function initMap(){
 
-   var myCenter = new google.maps.LatLng(35.6947058,139.982618);
+   var myCenter = new google.maps.LatLng(35.79063364148986,139.66121835642366);
 
 	var mapProp = {
 	  center:myCenter,
@@ -82,7 +82,7 @@ function initMap(){
 
 	marker.setMap(map);
 
-	var infowindow = new google.maps.InfoWindow({content: "千葉県船橋市" }); //创建一个InfoWindow
+	var infowindow = new google.maps.InfoWindow({content: "東京都板橋区" }); //创建一个InfoWindow
 
 	//使用谷歌地图定义的事件，给这个marker添加点击事件
 	google.maps.event.addListener(marker, "click", function(){

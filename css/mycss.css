@@ -20,7 +20,7 @@
         }
 
 /*实现地图图标上下跳动 start*/	
-.mapIcon{
+/* .mapIcon{
     animation: rotate .5s linear infinite;
     position:relative;
     top:-15px;
@@ -44,5 +44,5 @@
     100% {
         transform: translateY(0) ;
     }
-}
+} */
 /*实现地图图标上下跳动  end*/
