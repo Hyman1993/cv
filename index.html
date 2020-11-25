@@ -137,8 +137,8 @@
           </div>
 
           <!-- Avatar image -->
-          <div class="col-lg-3 col-md-12 col-sm-12 hidden-md animated">
-            <img data-src="img/avatar_kamakura500x680.jpg" src="img/loading.gif" class="avatar lazyload" alt="Avatar">
+          <div id="myProfilePhoto" class="col-lg-3 col-md-12 col-sm-12 hidden-md animated">
+            <img id="myProfileImg" data-src="img/avatar_kamakura500x680.jpg" src="img/loading.gif" class="avatar lazyload" alt="Avatar">
           </div>
           <!-- End avatar image -->
           <!-- Start skills / expertise -->
@@ -155,15 +155,17 @@
 					<h5><i class="fa fa-file-text"></i>&nbsp;<span class="text-justify">My Blog</span> :<a href="http://tokyocoder.com" target="_blank">IT Story In Tokyo</a></h5>
               </div>
 			<div>
-                <h5><span class="text-justify">Follow Me : </span></h5>
+                <h5><span class="text-justify">Contact Me : </span></h5>
 				<ul class="social">
-			      <li class="hvr-grow" title="微信"><a><i class="fa fa-wechat"></i></a></li>
+			      <li id="wechatLInk" class="hvr-grow" title="微信"><a href="javascript:void(0)"><i class="fa fa-wechat"></i></a>
+				  </li>
 			      <li class="hvr-grow" title="QQ"><a><i class="fa fa-qq"></i></a></li>
-			      <li class="hvr-grow" title="GitHub"><a href="https://github.com/Hyman1993/"><i class="fa fa-github"></i></a></li>
+			      <li class="hvr-grow" title="GitHub"><a href="https://github.com/Hyman1993/" target="_blank"><i class="fa fa-github"></i></a></li>
                   <li class="hvr-grow" title="Facebook"><a><i class="fa fa-facebook"></i></a></li>
                   <li class="hvr-grow" title="Twitter"><a><i class="fa fa-twitter"></i></a></li>
                   <li class="hvr-grow" title="LinkedIn"><a><i class="fa fa-linkedin"></i></a></li>
                </ul>
+			   <img id="wxImg" src="img/personal/wechat.jpg" alt="Wechat" style="display:none;"/> 
           </div>
 
             </div>
@@ -624,6 +626,19 @@
 			   </div>
             </figure>
 
+              <!-- image 6 -->
+            <figure class="cross-image">
+			  <div class="pic">
+                <img class="lazyload" data-src="img/mountains/mountain_6.jpg" src="img/loading.gif" alt="Mt.Amagi 天城山" /> 		  
+			  	<span class="pic-caption come-left">
+                    <strong class="pic-title">Mt.Amagi 天城山</strong>
+                    <h5>Date : 2020.07.25</h5>
+					<h5>Difficulty : ★★☆☆☆</h5>
+					<h5>Scene : ★★★☆☆</h5>
+                </span>
+			   </div>
+            </figure>
+
             <!-- image 2 -->
 			<figure class="cross-image animated">
 			  <div class="pic">
@@ -633,19 +648,6 @@
                     <h5>Date : 2018.07.14</h5>
 					<h5>Difficulty : ★★★★☆</h5>
 					<h5>Scene : ★★★☆☆</h5>
-                </span>
-			   </div>
-            </figure>
-
-            <!-- image 3 -->
-			<figure class="cross-image animated">
-			 <div class="pic">
-                <img class="lazyload" data-src="img/mountains/mountain_3.jpg" src="img/loading.gif" alt="Mt.Otake 大岳山" /> 		  
-			  	<span class="pic-caption rotate-out">
-                    <strong class="pic-title">Mt.Otake 大岳山</strong>
-                    <h5>Date : 2018.12.15</h5>
-					<h5>Difficulty : ★★☆☆☆</h5>
-					<h5>Scene : ★★☆☆☆</h5>
                 </span>
 			   </div>
             </figure>
@@ -843,21 +845,8 @@
                 </span>
 			   </div>
             </figure>
-
-              <!-- image 5 -->
-            <figure class="cross-image">
-			  <div class="pic">
-                <img class="lazyload" data-src="img/mountains/mountain_1.jpg" src="img/loading.gif" alt="Mt.Kawanori 川苔山" /> 		  
-			  	<span class="pic-caption come-left">
-                    <strong class="pic-title">Mt.Kawanori 川苔山</strong>
-                    <h5>Date : 2018.08.18</h5>
-					<h5>Difficulty : ★★☆☆☆</h5>
-					<h5>Scene : ★★★☆☆</h5>
-                </span>
-			   </div>
-            </figure>
 			
-			<!-- image 6 -->
+			<!-- image 5 -->
 			<figure class="cross-image">
 			 <div class="pic">
                 <img class="lazyload" data-src="img/mountains/mountain_5.jpg" src="img/loading.gif" alt="Mt.Tanzawa 丹沢山" /> 		  
@@ -865,6 +854,19 @@
                     <strong class="pic-title">Mt.Tanzawa 丹沢山</strong>
                     <h5>Date : 2019.10.27</h5>
 					<h5>Difficulty : ★☆☆☆☆</h5>
+					<h5>Scene : ★★★☆☆</h5>
+                </span>
+			   </div>
+            </figure>
+
+              <!-- image 6 -->
+            <figure class="cross-image">
+			  <div class="pic">
+                <img class="lazyload" data-src="img/mountains/mountain_6.jpg" src="img/loading.gif" alt="Mt.Amagi 天城山" /> 		  
+			  	<span class="pic-caption come-left">
+                    <strong class="pic-title">Mt.Amagi 天城山</strong>
+                    <h5>Date : 2020.07.25</h5>
+					<h5>Difficulty : ★★☆☆☆</h5>
 					<h5>Scene : ★★★☆☆</h5>
                 </span>
 			   </div>

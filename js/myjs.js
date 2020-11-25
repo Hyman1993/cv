@@ -44,8 +44,22 @@ $(function(){  //文档加载完毕时调用
       // 图片延迟加载 class="lazyload" data-src="img/mountains/mountain_1.jpg" src="img/loading.gif"
       lazyload();
 
+      $("#wechatLInk").hover(function(){
+                $("#wxImg").css("display", "block");
+         },function(){
+                $("#wxImg").css("display", "none");
+      });
+
+
 });  
 
+
+    function showImg() {
+        document.getElementById("wxImg").style.display="block";
+    }
+    function hideImg() {
+        document.getElementById("wxImg").style.display="none";
+    }
 
    // 导航栏快速定位
 function goTo(idName,obj){
